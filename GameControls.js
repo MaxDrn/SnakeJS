@@ -120,5 +120,5 @@ function game(){
 }
 
 function devChecks(){
-  console.log(x, y);
+  console.log(snake[0].x, snake[0].y);
 }
