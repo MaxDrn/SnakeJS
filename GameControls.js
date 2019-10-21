@@ -95,13 +95,10 @@ function game(){
   //check Snake Collision
 
   for(i = 0; i < snake.length; i++){
-    if(snake[0].x === snake[i].x && snake[0].y === snake[i].y && snake[0] != snake[i]){
+    if(snake[0].x === snake[i].x && snake[0].y === snake[i].y && snake[0] !== snake[i]){
       direction = null;
-      while(snake.length > 1){
-        snake.pop();
-      }
-      snake[0].x = 20;
-      snake[0].y = 20;
+      snake = [];
+      snake.push({x : 20, y : 20});
     }
   }
 
